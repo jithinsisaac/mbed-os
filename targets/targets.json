@@ -4891,6 +4891,18 @@
             "887"
         ]
     },
+    "NUCLEO_U595ZJT_Q": {
+        "inherits": [
+            "MCU_STM32U595xJ"
+        ],
+        "supported_form_factors": [
+            "ARDUINO_UNO"
+        ],
+        "device_name": "STM32U595ZJTx",
+        "detect_code": [
+            "888"
+        ]
+    },
     "MCU_STM32WB": {
         "inherits": [
             "MCU_STM32"

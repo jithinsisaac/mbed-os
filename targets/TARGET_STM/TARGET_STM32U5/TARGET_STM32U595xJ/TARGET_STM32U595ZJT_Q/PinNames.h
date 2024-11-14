@@ -205,41 +205,41 @@ typedef enum {
 
 #ifdef TARGET_FF_ARDUINO_UNO
     // Arduino Uno (Rev3) pins
-    ARDUINO_UNO_A0  = Px_x,
-    ARDUINO_UNO_A1  = Px_x,
-    ARDUINO_UNO_A2  = Px_x,
-    ARDUINO_UNO_A3  = Px_x,
-    ARDUINO_UNO_A4  = Px_x,
-    ARDUINO_UNO_A5  = Px_x,
+    ARDUINO_UNO_A0  = PA_3,
+    ARDUINO_UNO_A1  = PA_2,
+    ARDUINO_UNO_A2  = PC_3,
+    ARDUINO_UNO_A3  = PB_0,
+    ARDUINO_UNO_A4  = PC_1,
+    ARDUINO_UNO_A5  = PC_0,
 
-    ARDUINO_UNO_D0  = Px_x,
-    ARDUINO_UNO_D1  = Px_x,
-    ARDUINO_UNO_D2  = Px_x,
-    ARDUINO_UNO_D3  = Px_x,
-    ARDUINO_UNO_D4  = Px_x,
-    ARDUINO_UNO_D5  = Px_x,
-    ARDUINO_UNO_D6  = Px_x,
-    ARDUINO_UNO_D7  = Px_x,
-    ARDUINO_UNO_D8  = Px_x,
-    ARDUINO_UNO_D9  = Px_x,
-    ARDUINO_UNO_D10 = Px_x,
-    ARDUINO_UNO_D11 = Px_x,
-    ARDUINO_UNO_D12 = Px_x,
-    ARDUINO_UNO_D13 = Px_x,
-    ARDUINO_UNO_D14 = Px_x,
-    ARDUINO_UNO_D15 = Px_x,
+    ARDUINO_UNO_D0  = PG_8,
+    ARDUINO_UNO_D1  = PG_7,
+    ARDUINO_UNO_D2  = PF_15,
+    ARDUINO_UNO_D3  = PE_13,
+    ARDUINO_UNO_D4  = PF_14,
+    ARDUINO_UNO_D5  = PE_11,
+    ARDUINO_UNO_D6  = PE_9,
+    ARDUINO_UNO_D7  = PF_13,
+    ARDUINO_UNO_D8  = PF_12,
+    ARDUINO_UNO_D9  = PD_15,
+    ARDUINO_UNO_D10 = PD_14,
+    ARDUINO_UNO_D11 = PA_7,
+    ARDUINO_UNO_D12 = PA_6,
+    ARDUINO_UNO_D13 = PA_5,
+    ARDUINO_UNO_D14 = PB_9,
+    ARDUINO_UNO_D15 = PB_8,
 #endif
 
     // STDIO for console print
 #ifdef MBED_CONF_TARGET_STDIO_UART_TX
     CONSOLE_TX = MBED_CONF_TARGET_STDIO_UART_TX,
 #else
-    CONSOLE_TX = Px_x,
+    CONSOLE_TX = PA_9,
 #endif
 #ifdef MBED_CONF_TARGET_STDIO_UART_RX
     CONSOLE_RX = MBED_CONF_TARGET_STDIO_UART_RX,
 #else
-    CONSOLE_RX = Px_x,
+    CONSOLE_RX = PA_10,
 #endif
 
     /**** USB HS pins ****/

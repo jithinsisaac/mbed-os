@@ -58,7 +58,9 @@ static void _analogin_init_direct(analogin_t *obj, const PinMap *pinmap)
 
     if (obj->handle.Instance == ADC1) {
         __HAL_RCC_ADC1_CLK_ENABLE();
-    } else if (obj->handle.Instance == ADC4) {
+    } else if (obj->handle.Instance == ADC2) {
+        __HAL_RCC_ADC2_CLK_ENABLE();
+    }  else if (obj->handle.Instance == ADC4) {
         __HAL_RCC_ADC4_CLK_ENABLE();
     } else {
         error("ADC instance error\n");
@@ -131,6 +133,9 @@ uint16_t adc_read(analogin_t *obj)
 
     // Configure ADC channel
     if (obj->handle.Instance == ADC1) {
+        sConfig.Rank         = ADC_REGULAR_RANK_1;
+        sConfig.SamplingTime = ADC_SAMPLETIME_36CYCLES;
+    } else if (obj->handle.Instance == ADC2) {
         sConfig.Rank         = ADC_REGULAR_RANK_1;
         sConfig.SamplingTime = ADC_SAMPLETIME_36CYCLES;
     } else if (obj->handle.Instance == ADC4) {

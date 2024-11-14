@@ -273,8 +273,6 @@ g_pfnVectors:
 	.word	I2C6_EV_IRQHandler
 	.word	HSPI1_IRQHandler
 
-	.size	g_pfnVectors, .-g_pfnVectors
-
 /*******************************************************************************
 *
 * Provide weak aliases for each Exception handler to the Default_Handler.

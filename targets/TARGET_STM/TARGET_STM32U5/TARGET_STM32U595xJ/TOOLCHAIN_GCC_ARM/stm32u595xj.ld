@@ -15,7 +15,7 @@
  ******************************************************************************
 */
 
-#include "../cmsis_nvic.h"
+#include "../../mbed-os/targets/TARGET_STM/TARGET_STM32U5/TARGET_STM32U595xJ/cmsis_nvic.h"
 
 
 #if !defined(MBED_APP_START)
